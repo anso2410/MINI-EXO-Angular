@@ -6,18 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-title = 'string';
-sousTitre = 'string';
-description = 'string';
-lien = 'string';
+title :string;
+sousTitre : string;
+description : string;
+lien : string;
 
 
   constructor() {
     this.title = "Exercice 1";
+
     this.description = "Mon premier exercice angular avec Dragée gingerbread brownie topping chocolate cake." +
       " Sesame snaps bear claw chupa chups oat cake candy canes muffin. Halvah gummies oat cake." +
       " Candy canes cake fruitcake gummi bears tiramisu wafer jelly caramels. ";
 
+    this.sousTitre = "Le sous Titre Exo1";
+    
     this.lien = "lien vers le repository";
 
   }
